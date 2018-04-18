@@ -32,5 +32,5 @@ def turn (board)
   if (position == false)
     turn (board)
   end
-  
+
 end
