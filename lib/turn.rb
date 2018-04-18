@@ -10,6 +10,16 @@ def input_to_index(user_Input)
   user_Input.to_i - 1
 end
 
+def valid_move?(board,index)
+  if (board[index] == "X" || board[index] == "O")
+    false
+  elsif (!index.between?(0,8))
+    false
+  else
+    true
+  end
+end
+
 def turn (board)
   puts "Enter the new position"
   userInput = gets.strip
