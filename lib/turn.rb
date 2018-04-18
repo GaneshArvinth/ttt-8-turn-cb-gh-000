@@ -7,6 +7,7 @@ def display_board (elements)
 end
 
 def turn (board)
+  puts "Enter the new position"
   userInput = gets.strip
   index = userInput.to_i
 
