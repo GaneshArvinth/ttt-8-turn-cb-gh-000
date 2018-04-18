@@ -17,3 +17,4 @@ def turn (board)
     board [index] = "X"
   end
 end
+
