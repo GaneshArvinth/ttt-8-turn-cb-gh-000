@@ -11,7 +11,10 @@ def turn (board)
   userInput = gets.strip
   index = userInput.to_i
 
-  if ( board[index] == "X" || board[index] == "O")
+  if (index > 8)
+    puts "Value should not be greater than 8"
+  elsif( board[index] == "X" || board[index] == "O")
+    puts "Position is not empty"
     turn (board)
   else
     board [index] = "X"
