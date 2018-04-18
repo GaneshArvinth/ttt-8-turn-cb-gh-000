@@ -16,6 +16,9 @@ def turn (board)
   elsif( board[index] == "X" || board[index] == "O")
     puts "Position is not empty"
     turn (board)
+  elsif( board[index] == "" || board[index] == " ")
+    puts "Enter a valid value"
+    turn (board)
   else
     board [index] = "X"
   end
