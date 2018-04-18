@@ -15,3 +15,5 @@ def turn (board)
   else
     board [index] = "X"
   end
+end
+
