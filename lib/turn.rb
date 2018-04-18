@@ -9,7 +9,7 @@ end
 def turn (board)
   puts "Enter the new position"
   userInput = gets.strip
-  index = userInput.to_i
+  index = userInput.to_i - 1
 
   if (index > 8)
     puts "Value should not be greater than 8"
@@ -20,4 +20,3 @@ def turn (board)
     board [index] = "X"
   end
 end
-
