@@ -25,16 +25,5 @@ def move(board,index,symbol)
 end
 
 def turn (board)
-  puts "Enter the new position"
-  userInput = gets.strip
-  index = userInput.to_i - 1
-
-  if (index > 8)
-    puts "Value should not be greater than 8"
-  elsif( board[index] == "X" || board[index] == "O")
-    puts "Position is not empty"
-    turn (board)
-  else
-    board [index] = "X"
-  end
+  puts "Please enter 1-9:"
 end
